@@ -16,10 +16,16 @@ val amount = 900
         print("You're just getting by just fine")
     }
 
+    //In When WE Can also check ranges
     when(amount){
-        1000 -> print("You're wealthy")
-        10000 -> print("You're very wealthy")
-        else -> print("You're just getting by just fine")
+        //When in range
+        in 1..999 -> print("You're poor")
+        // not in range
+        !in 1000..10000 -> print("You're very poor")
+
+        1000 -> println("You're wealthy")
+        10000 -> println("You're very wealthy")
+        else -> println("You're just getting by just fine")
     }
 
 }
