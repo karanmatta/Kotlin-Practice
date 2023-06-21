@@ -4,7 +4,11 @@ package com.example.practicekotlin
 
 // Interface
 
+class Button(val lable: String):{
+
+}
+
 interface clickEvent{
-    fun onClick()
+    fun onClick(message : String)
     fun onLongClick()
 }

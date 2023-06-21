@@ -4,7 +4,5 @@ package com.example.practicekotlin
 
 // Interface
 
-interface clickEvent{
-    fun onClick()
-    fun onLongClick()
+interface clickEvent1 {
 }
